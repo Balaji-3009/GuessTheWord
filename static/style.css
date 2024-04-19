@@ -197,5 +197,10 @@ button:hover {
     #output {
         margin-left: 15%;
     }
+    #inputPage{
+        width:100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
     
 }
