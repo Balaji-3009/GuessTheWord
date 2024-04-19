@@ -37,7 +37,7 @@ function moveToNextBox(currentInput, nextIndex) {
 function processGuess() {
     let guess = "";
     for (let i = 0; i < 5; i++) {
-        guess += document.getElementById("letter" + i).value;
+        guess += document.getElementById("letter" + i).value.toLowerCase();
     }
     let output = document.createElement("div");
     output.classList.add("output-container");
