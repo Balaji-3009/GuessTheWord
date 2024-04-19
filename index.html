@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Clone</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+          <h1 class="navbar-title">GuessTheWord</h1>
+        </div>
+    </nav>
+    <div id="inputPage">
+        <h1>Enter a 5-letter word and number of attempts:</h1>
+        <input type="text" id="wordInput" placeholder="Enter 5-letter word">
+        <input type="number" id="attemptInput" placeholder="Enter number of attempts">
+        <button onclick="startGame()" id="startGame">Start Game</button><br>
+        <a href="#" id="rulesLink" onclick="showRules()">Rules</a>
+    </div>
+    <div id="guessingPage" style="display: none;">
+        <a href="#" id="rulesLink" onclick="showRules()">Rules</a>
+        <form id="guessForm">
+            <input type="text" class="letterInput" id="firstBox" maxlength="1">
+            <input type="text" class="letterInput" maxlength="1">
+            <input type="text" class="letterInput" maxlength="1">
+            <input type="text" class="letterInput" maxlength="1">
+            <input type="text" class="letterInput" maxlength="1">
+            <button type="submit">Guess</button>
+        </form>
+        <div id="output"></div>
+    </div>
+    <div id="celebration"></div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
