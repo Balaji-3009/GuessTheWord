@@ -5,6 +5,17 @@ function startGame() {
     word = document.getElementById("wordInput").value.toLowerCase();
     attempts = document.getElementById("attemptInput").value;
 
+    if (word.length !== 5) {
+        alert("Please enter a 5-letter word.");
+        return;
+    }
+
+    if (isNaN(attempts) || attempts < 2) {
+        alert("Please enter a valid number of attempts (at least 2).");
+        return;
+    }
+
+
     document.getElementById("inputPage").style.display = "none";
     document.getElementById("guessingPage").style.display = "block";
 
